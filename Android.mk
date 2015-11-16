@@ -283,6 +283,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CFLAGS := $(common_cflags)
 LOCAL_C_INCLUDES := $(common_c_includes)
 LOCAL_ARM_MODE := arm
+LOCAL_MODULE_PATH := $(TARGET_OUT_OPTIONAL_EXECUTABLES)
 
 LOCAL_SRC_FILES := \
   CPP/7zip/Archive/Common/OutStreamWithCRC.cpp \
