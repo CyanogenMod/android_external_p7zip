@@ -363,7 +363,5 @@ LOCAL_SRC_FILES := \
   C/CpuArch.c \
   C/Threads.c \
 
-LOCAL_ADDITIONAL_DEPENDENCIES := lib7z
-
 include $(BUILD_EXECUTABLE)
 
