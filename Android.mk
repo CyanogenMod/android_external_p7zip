@@ -363,7 +363,6 @@ LOCAL_SRC_FILES := \
   C/CpuArch.c \
   C/Threads.c \
 
-LOCAL_ADDITIONAL_DEPENDENCIES := lib7z
-
+LOCAL_ADDITIONAL_DEPENDENCIES := $(call intermediates-dir-for,SHARED_LIBRARIES,lib7z,,,)/LINKED/lib7z.so
 include $(BUILD_EXECUTABLE)
 
