@@ -164,6 +164,9 @@ Stop_Compiling_Bad_Endian
 
 
 #ifdef MY_CPU_X86_OR_AMD64
+
+Bool CPU_Is_InOrder();
+
 #ifdef _7ZIP_ASM
 
 typedef struct
@@ -192,7 +195,6 @@ int x86cpuid_GetFirm(const Cx86cpuid *p);
 #define x86cpuid_GetModel(ver)  (((ver >> 12) &  0xF0) | ((ver >> 4) & 0xF))
 #define x86cpuid_GetStepping(ver) (ver & 0xF)
 
-Bool CPU_Is_InOrder();
 Bool CPU_Is_Aes_Supported();
 
 #endif
